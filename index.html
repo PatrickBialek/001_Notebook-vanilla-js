@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Make note and don't forget about your plans!</title>
+	<link rel="icon" href="images/icon.png" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet" />
+	<script defer src="dist/bundle.js"></script>
+</head>
+
+<body>
+	<header class="header">
+		<h1 class="heading-primary">
+			<span class="heading-primary--bigger">Notes creator</span>
+			<span class="heading-primary--smaller">You can create notes using JavaScript and LocalStorage.</span>
+		</h1>
+	</header>
+	<main>
+		<section class="note-creator">
+			<div class="note-creator__container">
+				<input class="note-creator__text" type="text" placeholder="Put your title..." id="note-title" />
+				<textarea class="note-creator__textarea" placeholder="Put your note..." id="note-content"></textarea>
+				<select class="note-creator__select" id="select-importance">
+					<option value="">Select importance...</option>
+					<option value="green">Low - green</option>
+					<option value="orange">Medium - yellow</option>
+					<option value="red">High - red</option>
+				</select>
+				<input class="note-creator__submit" type="submit" id="note-add" />
+			</div>
+		</section>
+		<section class="note-container">
+			<h2 class="heading-secondary margin-bottom--medium">Your Notes:</h2>
+			<div class="note-container__notes" id="notes-container"></div>
+		</section>
+	</main>
+	<footer class="footer"></footer>
+</body>
+
+</html>
