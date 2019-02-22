@@ -1,7 +1,4 @@
-import {
-	storage,
-	notebookField
-} from "./app.js";
+import { storage, notebookField } from "./app.js";
 
 class Storage {
 	addNoteToTheStorage(title, note, importance, dateID) {
@@ -54,6 +51,4 @@ class Storage {
 	}
 }
 
-export {
-	Storage
-};
+export { Storage };
